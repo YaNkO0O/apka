@@ -20,4 +20,8 @@ class PostController extends Controller
         Post::create($IncomingFields);
         return redirect('/');
     }
+    public function ShowEditScreen(Post $post)
+    {
+        return view('/', ['post' => $post]);
+    }
 }
