@@ -29,7 +29,8 @@
             <div style="background-color: gray; padding: 10px; margin: 10px;">
             <h3>{{$post['title']}}</h3>
             {{$post['body']}}
-            <p><a href="/EditPost/{{$post->id}}"><button>Edytuj</button></a></p>
+            <p><a href="/EditPost/{{$post->id}}"><button>Edytuj</button>
+            </a></p>
             <form action="/DeletePost/{{$post->id}}" method="POST">
             @csrf
             @method('delete')

@@ -22,6 +22,6 @@ class PostController extends Controller
     }
     public function ShowEditScreen(Post $post)
     {
-        return view('/', ['post' => $post]);
+        return view('/EditPost');
     }
 }

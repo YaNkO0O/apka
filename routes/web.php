@@ -20,4 +20,4 @@ Route::post('/logout', [UserController::class, 'logout']);
 Route::post('/login', [UserController::class, 'login']);
 
 Route::post('/CreatePost', [PostController::class, 'CreatePost']);
-Route::post('/EditPost{post}', [PostController::class, 'ShowEditScreen']);
+Route::get('/EditPost/{post}', [PostController::class, 'ShowEditScreen']);
